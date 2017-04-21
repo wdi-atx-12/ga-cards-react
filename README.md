@@ -8,6 +8,7 @@ Let's put those hard earned new skills from this week to work! We'll be using a 
 
 * [React Router](https://github.com/ReactTraining/react-router)
 * [Firebase](https://firebase.google.com/)
+* [Create React App *Recommended](https://github.com/facebookincubator/create-react-app)
 
 ---
 
