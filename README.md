@@ -19,7 +19,7 @@ Let's put those hard earned new skills from this week to work! We'll be using a 
 
 ## Deliverables
 
-<kbd align="center"><img src="https://cloud.githubusercontent.com/assets/204420/25261694/e92abc3a-2618-11e7-9615-941dcd54bed4.png" width="600" /></kbd>
+<kbd><img src="https://cloud.githubusercontent.com/assets/204420/25261694/e92abc3a-2618-11e7-9615-941dcd54bed4.png" width="600" style="margin: 0 auto" /></kbd>
 
 ---
 
