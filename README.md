@@ -25,5 +25,5 @@ Let's put those hard earned new skills from this week to work! We'll be using a 
 
 ## Challenges
 
-* Deploy your React application to either Firebase or GitHub Pages
-* Swap out Firebase with an Express/MongoDB setup for the backend 
+* Deploy your React application to either [Firebase](https://firebase.google.com/docs/hosting/deploying) or [GitHub Pages](https://pages.github.com/)
+* Swap out Firebase with an Node/Express/MongoDB setup for the backend instead 
