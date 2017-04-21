@@ -18,9 +18,9 @@ Using the [mockup](./mockup) provided, create a React application that allows a 
 
 * Create a new React application from the ground up using `create-react-app`
 * Use React Router to manage state 
-* Use `dotenv` to store configuration values
+* Use [dotenv](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-custom-environment-variables) to store configuration values
 * Separate the single CSS file into individual component CSS files 
-* All cards should initially be face down when loaded
+* All cards should initially be face down when loaded and revealed when clicked
 * Users should be able to see a preview of the card to be added before saving
 
 ---
@@ -28,6 +28,12 @@ Using the [mockup](./mockup) provided, create a React application that allows a 
 ## Deliverables
 
 <kbd><img src="https://cloud.githubusercontent.com/assets/204420/25261694/e92abc3a-2618-11e7-9615-941dcd54bed4.png" width="650" /></kbd>
+
+---
+
+## Demo
+
+https://generalassembly-atx.github.io/ga-cards-react/demo
 
 ---
 
