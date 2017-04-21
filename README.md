@@ -14,12 +14,14 @@ Let's put those hard earned new skills from this week to work! We'll be using a 
 
 ## Requirements
 
-Using the [mockup](./mockup) provided, create a React application that allows a user to view all the cards saved and create new ones as well. 
+Using the [mockup](./mockup) provided, create a React application that allows a user to view all the cards saved and to create new ones as well. 
 
 * Create a new React application from the ground up using `create-react-app`
 * Use React Router to manage state 
 * Use `dotenv` to store configuration values
 * Separate the single CSS file into individual component CSS files 
+* All cards should initially be face down when loaded
+* Users should be able to see a preview of the card to be added before saving
 
 ---
 
