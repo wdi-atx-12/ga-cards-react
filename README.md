@@ -6,9 +6,9 @@ Let's put those hard earned new skills from this week to work! We'll be using a 
 
 ## Prerequisites
 
+* [Create React App](https://github.com/facebookincubator/create-react-app)
 * [React Router](https://github.com/ReactTraining/react-router)
 * [Firebase](https://firebase.google.com/)
-* [Create React App](https://github.com/facebookincubator/create-react-app) *recommended
 
 ---
 
