@@ -34,4 +34,4 @@ Using the [mockup](./mockup) provided, create a React application that allows a 
 ## Challenges
 
 * Deploy your React application to either [Firebase](https://firebase.google.com/docs/hosting/deploying) or [GitHub Pages](https://pages.github.com/)
-* Swap out Firebase with an Node/Express/MongoDB setup instead 
+* Swap out Firebase with an Node/Express/MongoDB setup  
