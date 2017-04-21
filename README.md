@@ -4,11 +4,16 @@ Let's put the hard earned new skills from this week to work! We'll be using a li
 
 ---
 
-## Preparation
+## Prerequisites
+
+* [React Router](https://github.com/ReactTraining/react-router)
+* [Firebase](https://firebase.google.com/)
 
 ---
 
 ## Requirements
+
+
 
 ---
 
