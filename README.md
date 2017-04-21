@@ -24,3 +24,6 @@ Let's put those hard earned new skills from this week to work! We'll be using a 
 ---
 
 ## Challenges
+
+* Deploy your React application to either Firebase or GitHub Pages
+* Swap out Firebase with an Express/MongoDB setup for the backend 
