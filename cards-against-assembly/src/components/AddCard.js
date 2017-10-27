@@ -8,7 +8,7 @@ class AddCard extends Component {
     this.state = {
       value: ''
     };
-    
+
     this._handleChange = this._handleChange.bind(this);
   }
 
@@ -17,7 +17,6 @@ class AddCard extends Component {
     this.setState({
       value: this.inputBox.value
     })
-
   }
 
   render(){
@@ -26,6 +25,7 @@ class AddCard extends Component {
         <div className="row">
           <form name="add-card" id="add-card">
             <input onChange={this._handleChange} ref={(input) => this.inputBox = input} type="text" name="question" id="question" placeholder="What's your question?" />
+            <input onClick={this._handleSubmit} type="submit" className="btn btn-primary" value="Save" />
           </form>
           <br />
           <div className="card">

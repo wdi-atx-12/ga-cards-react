@@ -96,7 +96,7 @@ nav.tabs a.active {
   border-radius: 5px;
 }
 
-input {
+input:first-child {
   width: 50%;
   padding: 6px 9px;
 }
