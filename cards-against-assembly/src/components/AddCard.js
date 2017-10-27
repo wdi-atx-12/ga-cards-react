@@ -23,8 +23,15 @@ class AddCard extends Component {
   }
 
   _handleSubmit() {
-
-
+    database.ref('/cards')
+      .push({
+        value: this.state.value
+      })
+      .then(() => {
+        this.setState({
+          value: ''
+        });
+      });
   }
 
   render(){
@@ -33,7 +40,7 @@ class AddCard extends Component {
         <div className="row">
           <form name="add-card" id="add-card" onSubmit={this._handleSubmit}>
             <input onChange={this._handleChange} ref={(input) => this.inputBox = input} type="text" name="question" id="question" placeholder="What's your question?" />
-            <input onClick={this._handleSubmit} type="submit" className="btn btn-primary" value="Save" />
+            <input type="submit" className="btn btn-primary" value="Save" />
           </form>
           <br />
           <div className="card">

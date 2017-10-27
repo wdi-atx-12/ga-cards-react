@@ -1,43 +1,45 @@
 import React, { Component } from 'react';
 
+import Cards from './Cards.js';
+
+import { database, firebaseListToArray } from '../utils/firebase.js';
+
 class CardList extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      showCard: "card-title"
-    }
-    this._showCard = this._showCard.bind(this);
-  }
-  _showCard(e){
-    e.preventDefault();
-    if (this.state.showCard === "card-title") {
-      this.setState({
-        showCard: " "
-      })
-    } else {
-      this.setState({
-        showCard: "card-title"
-      })
+      cardList: []
     }
   }
+
+  componentWillMount() {
+    database.ref('/cards')
+      .on('value', data => {
+        const results = firebaseListToArray(data.val());
+        this.setState({
+          cardList: results
+        })
+      })
+  }
+
 
   render(){
+    let cardListArr = this.state.cardList.map(cardListData => (
+      <Cards key={cardListData.id} card={cardListData.value} />
+    ));
+
+    console.log(cardListArr);
+
     return(
       <section id="cards" className="container-fluid">
-
-        <div className="row">
-          <div className="col-sm-6 col-md-4 col-lg-4">
-            <div onClick={this._showCard} className="card">
-              <h4 className={this.state.showCard}>I couldnt complete my assignment because ________</h4>
-              <h6>Cards Against Assembly</h6>
-            </div>
-          </div>
-        </div>
-
+        {cardListArr}
       </section>
     )
   }
+  // componentWillUnmount() {
+  //   database.off();
+  // }
 }
 
 export default CardList
