@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { database } from '../utils/firebase.js';
 
 class AddCard extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ class AddCard extends Component {
     };
     
     this._handleChange = this._handleChange.bind(this);
+    this._handleSubmit = this._handleSubmit.bind(this);
   }
 
 
@@ -17,6 +19,9 @@ class AddCard extends Component {
     this.setState({
       value: this.inputBox.value
     })
+  }
+
+  _handleSubmit() {
 
   }
 
@@ -24,7 +29,7 @@ class AddCard extends Component {
     return(
       <section className="container-fluid">
         <div className="row">
-          <form name="add-card" id="add-card">
+          <form name="add-card" id="add-card" onSubmit={this._handleSubmit}>
             <input onChange={this._handleChange} ref={(input) => this.inputBox = input} type="text" name="question" id="question" placeholder="What's your question?" />
           </form>
           <br />

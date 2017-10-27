@@ -1,6 +1,27 @@
 import React, { Component } from 'react';
 
-class Cards extends Component {
+class CardList extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      showCard: "card-title"
+    }
+    this._showCard = this._showCard.bind(this);
+  }
+  _showCard(e){
+    e.preventDefault();
+    if (this.state.showCard === "card-title") {
+      this.setState({
+        showCard: " "
+      })
+    } else {
+      this.setState({
+        showCard: "card-title"
+      })
+    }
+  }
+
   render(){
     return(
       <section id="cards" className="container-fluid">
@@ -19,4 +40,4 @@ class Cards extends Component {
   }
 }
 
-export default Cards
+export default CardList
