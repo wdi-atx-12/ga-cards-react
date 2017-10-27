@@ -6,6 +6,8 @@ import { database, firebaseListToArray } from '../utils/firebase.js';
 class CardContainer extends Component {
   constructor(props){
     super(props);
+
+
   }
 
   render() {

@@ -89,11 +89,20 @@ nav.tabs a {
   margin-bottom: 24px;
   margin-right: 1px;
 }
-nav.tabs a.active {
+ nav.tabs a.active {
   background-color: black;
   color: white;
   text-decoration: none;
   border-radius: 5px;
+}
+
+button {
+  text-decoration: none;
+ background-color: black;
+ color: white;
+ text-decoration: none;
+ border-radius: 5px;
+ height: 35px;
 }
 
 input {

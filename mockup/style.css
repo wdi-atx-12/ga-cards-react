@@ -96,6 +96,13 @@ nav.tabs a.active {
   border-radius: 5px;
 }
 
+button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 input {
   width: 50%;
   padding: 6px 9px;
