@@ -6,7 +6,7 @@ import Footer from './Footer.js';
 class About extends Component {
   render(){
     return(
-      <div>
+      <div className="container">
       <Header />
         <div>
           <p>To start the game, each player draws ten White Cards.</p>
