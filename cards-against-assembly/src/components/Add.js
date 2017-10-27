@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 
 import Header from './Header.js';
-import Cards from './Cards.js'
+import AddCard from './AddCard.js'
 import Footer from './Footer.js';
 
-class Home extends Component {
+class Add extends Component {
   render(){
     return(
       <div className="container">
         <Header />
-          <Cards />
+          <AddCard />
         <Footer />
       </div>
     )
   }
 }
 
-export default Home
+export default Add
