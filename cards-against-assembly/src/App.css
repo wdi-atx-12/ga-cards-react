@@ -100,3 +100,7 @@ input {
   width: 50%;
   padding: 6px 9px;
 }
+
+.card-title {
+  display: none;
+}
