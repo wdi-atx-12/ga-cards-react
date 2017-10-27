@@ -5,6 +5,8 @@ import Card from './Card.js'
 class CardContainer extends Component {
   constructor(props){
     super(props);
+
+
   }
 
   render() {

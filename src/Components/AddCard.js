@@ -1,17 +1,42 @@
 import React, { Component } from 'react';
+// import { database } from '../utils/firebase.js'
 
 class AddCard extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      value: ''
+    }
+    this._updateText = this._updateText.bind(this);
+    this._addToDb = this._addToDb.bind(this);
+  }
+
+  _updateText(){
+    this.setState({
+      value: this.inputText.value
+    })
+  }
+
+  _addToDb(evt){
+    evt.preventDefault();
+    let promptToAdd = this.state.value + '_______________';
+    console.log("adding " + promptToAdd + " to database");
+    
+  }
+
   render() {
     return (
       <div>
         <section className="container-fluid">
           <div className="row">
-            <form name="add-card" id="add-card">
-              <input type="text" name="question" id="question" placeholder="What's your question?" />
+            <form name="add-card" id="add-card" onSubmit= {this._addToDb}>
+              <input onChange={this._updateText} ref={(input) => this.inputText = input} type="text" name="question" id="question" placeholder="What's your question?" />
+              <button type="submit">Submit Question</button>
             </form>
             <br />
             <div className="card">
-              <h4 className="card-title">A preview appears here as you type...</h4>
+              <h4 className="card-title">{this.state.value}</h4>
               <h6>Cards Against Assembly</h6>
             </div>
           </div>
