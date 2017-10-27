@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  NavLink,
+  Switch,
+} from 'react-router-dom';
 
 class Header extends Component {
   render(){
@@ -8,11 +14,18 @@ class Header extends Component {
           <h1 className="pull-left">Cards Against Assembly</h1>
         </header>
 
-        <nav className="tabs">
-          <a href="index.html" className="active">Home</a>
-          <a href="add.html">Add a New Card</a>
-          <a href="about.html">About</a>
-        </nav>
+        <Router>
+          <nav className="tabs">
+            <NavLink exact to="/">Home</NavLink>
+            <NavLink to="/Add">Add a New Card</NavLink>
+            <NavLink to="/About">About</NavLink>
+          </nav>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/Add" component={Add} />
+            <Route path="/About" component={About} />
+          </Switch>
+        </Router>
       </div>
     )
   }
