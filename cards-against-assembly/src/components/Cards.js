@@ -28,12 +28,10 @@ class Cards extends Component {
 
   render(){
     return(
-      <div className="row">
-        <div className="col-sm-6 col-md-4 col-lg-4">
-          <div onClick={this._showCard} className="card">
-            <h4 className={this.state.showCard}>{this.props.card}</h4>
-            <h6>Cards Against Assembly</h6>
-          </div>
+      <div className="col-sm-6 col-md-4 col-lg-4">
+        <div onClick={this._showCard} className="card">
+          <h4 className={this.state.showCard}>{this.props.card}</h4>
+          <h6>Cards Against Assembly</h6>
         </div>
       </div>
     )

@@ -33,7 +33,9 @@ class CardList extends Component {
 
     return(
       <section id="cards" className="container-fluid">
-        {cardListArr}
+        <div className="row">
+          {cardListArr}
+        </div>
       </section>
     )
   }
